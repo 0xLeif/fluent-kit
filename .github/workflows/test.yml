@@ -198,7 +198,7 @@ jobs:
       - name: Run Mongo driver tests with Thread Sanitizer
         run: swift test --package-path fluent-mongo-driver --enable-test-discovery --sanitize=thread
         continue-on-error: true
-  build:
+  iOS:
     runs-on: macOS-latest
     steps:
     - name: Select latest available Xcode
